@@ -1,0 +1,207 @@
+.home {
+
+    .hero-home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-end;
+        min-height: 100vh;
+
+        .hero-title-home {
+            padding-right: 40px;
+            padding-bottom: 40px;
+            text-align: right;
+            //font-style: italic;
+
+            .title {
+                overflow: hidden;
+
+                h1 {
+                    text-transform: uppercase;
+                    font-family: 'Vermin Vibes';
+                    font-size: 8.5vw;
+                }
+            }
+
+            .subtitle {
+                overflow: hidden;
+
+                p {
+                    font-size: small;
+                }
+            }
+        }
+    }
+
+    .grid-home {
+        display: grid;
+        grid-template-columns: 35% 65%;
+
+        img {
+            height: 70vh;
+        }
+    }
+
+    .grid-home-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 100vh;
+
+        .img-content {
+            height: 100vh;
+        }
+
+        .text-content {
+            position: relative;
+
+            p {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                width: 50%;
+                font-size: small;
+                text-align: justify;
+            }
+        }
+    }
+
+    .grid-home-two {
+        display: grid;
+        grid-template-columns: 65% 35%;
+
+        img {
+            height: 70vh;
+        }
+    }
+
+    .grid-home-content-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 100vh;
+
+        .img-content {
+            height: 100vh;
+        }
+
+        .text-content {
+            position: relative;
+
+            p {
+                position: absolute;
+                bottom: 50px;
+                right: 50px;
+                width: 50%;
+                font-size: small;
+                text-align: justify;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .hero-home {
+            min-height: 70vh;
+        }
+
+        .grid-home, .grid-home-two {
+            img {
+                height: 60vh;
+            }
+        }
+
+        .grid-home-content, .grid-home-content-two{
+            min-height: 70vh;
+
+            .img-content{
+                height: 70vh;
+            }
+
+            .text-content{
+                p{
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 426px) {
+        .hero-home {
+            grid-template-columns: 1fr;
+            grid-template-rows: 50% 50%;
+            min-height: 100vh;
+
+            .hero-title-home{
+                .title{
+                    h1{
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+
+        .grid-home {
+            grid-template-columns: 1fr;
+            grid-template-rows: 35% 65%;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .grid-home-content {
+            display: flex;
+            flex-direction: column-reverse !important;
+            min-height: 100vh;
+
+            .img-content {
+                height: 50vh;
+            }
+
+            .text-content {
+                position: unset;
+                display: flex;
+                align-items: center;
+                min-height: 50vh;
+
+                p {
+                    position: unset;
+                    width: 100%;
+                    top: unset;
+                    left: unset;
+                    padding: 0 15px;
+                }
+            }
+        }
+
+        .grid-home-two {
+            grid-template-columns: 1fr;
+            grid-template-rows: 65% 35%;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .grid-home-content-two {
+            grid-template-columns: 1fr;
+            grid-template-rows: 50% 50%;
+            min-height: 100vh;
+
+            .img-content {
+                height: 100%;
+            }
+
+            .text-content {
+                position: unset;
+                display: flex;
+                align-items: center;
+
+                p {
+                    position: unset;
+                    width: 100%;
+                    top: unset;
+                    left: unset;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}

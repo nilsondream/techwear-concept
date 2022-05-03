@@ -1,0 +1,17 @@
+.footer{
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+
+    span{
+        text-align: center;
+        font-size: x-small;
+    }
+
+    @media (max-width: 426px){
+        min-height: 25vh;
+        margin-bottom: 20px;
+    }
+}

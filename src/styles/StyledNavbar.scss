@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    position: fixed;
+    right: 20px;
+    top: 0;
+    writing-mode: vertical-rl;
+    padding: 20px 0;
+    z-index: 99;
+
+    span{
+        font-size: x-small;
+    }
+
+    @media (max-width: 426px){
+        display: none;
+    }
+}
