@@ -114,7 +114,7 @@ const Home = () => {
                         La mayoría de pantalones y camisetas se cortan según diseños estándar, pero gracias a la tecnología, 
                         estas prendas desafían lo convencional tomando en cuenta el movimiento natural del ser humano. El llamado 
                         “diseño anatómico” cuenta todos los factores que envuelven las acciones del cuerpo, permitiendo a los usuarios 
-                        moverse libremente sin que la tela principal de deshaga o se alargue de más.
+                        moverse libremente sin que la tela principal se deshaga o se alargue de más.
                     </p>
                 </div>
                 <div className='img-content'><img src={img13} alt="techwear" /></div>
