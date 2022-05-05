@@ -17,8 +17,7 @@
 
                 h1 {
                     text-transform: uppercase;
-                    font-family: 'Vermin Vibes';
-                    font-size: 8.5vw;
+                    font-size: 6.5vw;
                 }
             }
 
@@ -59,7 +58,6 @@
                 left: 50px;
                 width: 50%;
                 font-size: small;
-                text-align: justify;
             }
         }
     }
@@ -91,7 +89,6 @@
                 right: 50px;
                 width: 50%;
                 font-size: small;
-                text-align: justify;
             }
         }
     }
@@ -101,21 +98,23 @@
             min-height: 70vh;
         }
 
-        .grid-home, .grid-home-two {
+        .grid-home,
+        .grid-home-two {
             img {
                 height: 60vh;
             }
         }
 
-        .grid-home-content, .grid-home-content-two{
+        .grid-home-content,
+        .grid-home-content-two {
             min-height: 70vh;
 
-            .img-content{
+            .img-content {
                 height: 70vh;
             }
 
-            .text-content{
-                p{
+            .text-content {
+                p {
                     width: 70%;
                 }
             }
@@ -128,9 +127,12 @@
             grid-template-rows: 50% 50%;
             min-height: 100vh;
 
-            .hero-title-home{
-                .title{
-                    h1{
+            .hero-title-home {
+                padding-right: 15px;
+                padding-bottom: 15px;
+                
+                .title {
+                    h1 {
                         font-size: 50px;
                     }
                 }
