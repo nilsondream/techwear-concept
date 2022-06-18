@@ -46,7 +46,7 @@ const Home = () => {
         <section className='home'>
             <div className='hero-home'>
                 <div className='hero-title-home'>
-                    <div className='title'><h1 ref={el => title = el}>Techwear</h1></div>
+                    <div className='title'><h1 ref={el => title = el}>T-Wear Concept</h1></div>
                     <div className='subtitle'><p ref={el => subtitle = el}>Streetwear Contemporary</p></div>
                 </div>
                 <img ref={el => image = el} src={img1} alt='techwear' />
